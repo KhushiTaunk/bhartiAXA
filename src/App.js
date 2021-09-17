@@ -1,8 +1,9 @@
 import './App.css';
-import ButtonAppBar from './Components/AppBar.js'
+import appbar from './Components/AppBar'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home.js'
-import Gallery from './Pages/Gallery.js'
+import Efutureinvest from './Pages/efutureinvest'
+import ProminentAppBar from './Components/prominentappbar';
 
 
 function App() {
@@ -10,18 +11,21 @@ function App() {
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
-      <ButtonAppBar/>
+      <ProminentAppBar/>
       </header>
       
       {/* Router - Pages */}
           <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/'} exact > <Efutureinvest/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/efutureinvest'} > <Efutureinvest/> </Route>
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery/> </Route>
+            
+            
           </Switch>
 
       <footer className="App-footer">
         This is a footer
+        
       </footer>
     </div>
   );
