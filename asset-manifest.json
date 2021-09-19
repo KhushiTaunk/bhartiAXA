@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bhartiAXA/static/css/main.915667ca.chunk.css",
-    "main.js": "/bhartiAXA/static/js/main.c4ff82f5.chunk.js",
-    "main.js.map": "/bhartiAXA/static/js/main.c4ff82f5.chunk.js.map",
+    "main.js": "/bhartiAXA/static/js/main.122a3dc0.chunk.js",
+    "main.js.map": "/bhartiAXA/static/js/main.122a3dc0.chunk.js.map",
     "runtime-main.js": "/bhartiAXA/static/js/runtime-main.4874eddd.js",
     "runtime-main.js.map": "/bhartiAXA/static/js/runtime-main.4874eddd.js.map",
     "static/js/2.8ccd9867.chunk.js": "/bhartiAXA/static/js/2.8ccd9867.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.4874eddd.js",
     "static/js/2.8ccd9867.chunk.js",
     "static/css/main.915667ca.chunk.css",
-    "static/js/main.c4ff82f5.chunk.js"
+    "static/js/main.122a3dc0.chunk.js"
   ]
 }
