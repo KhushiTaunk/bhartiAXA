@@ -55,6 +55,7 @@ export default function SimpleCardcpPage() {
           You are buying this policy for?
         </Typography>
       </CardContent>
+        {/* SelectPolicyFor */}
         <SimpleSelect/>
 
         <Typography variant="body1" component="p">
@@ -65,16 +66,34 @@ export default function SimpleCardcpPage() {
           (Person who will pay premium for this policy)
         </Typography>
 
+        {/* TextFieldFirstName */}
         <BasicTextFieldsFirstName/>
+
+        {/* TextFieldLastName */}
         <BasicTextFieldsLastName/>
+
+        {/* TextFieldDOB */}
         <BasicTextFieldsDOB/>
+
+        {/* TextFieldMobileNo */}
         <BasicTextFieldsMobileNo/>
+
+        {/* TextFieldEmailID */}
         <BasicTextFieldsEmailID/>
+
+        {/* RadioButtonMaleFemale */}
         <FormControlLabelPlacement/>
 
+        {/* SelectPremiumPaymentTerm */}
         <SimpleSelectPremiumPaymentTerm/>
+
+        {/* SelectPremiumMode */}
         <SimpleSelectPremiumMode/>
+
+        {/* selectAnnualInvestment */}
         <FormPropsTextFieldsAnnualInvestment/>
+
+        {/* SelectModalPremium */}
         <FormPropsTextFieldsModalPremium/>
 
         <p>
@@ -104,7 +123,7 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           High
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
 
         <Typography variant="body2" component="p">
@@ -122,7 +141,7 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           High
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
 
         <Typography variant="body2" component="p">
@@ -140,7 +159,7 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           High
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         
 
@@ -159,7 +178,7 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           Moderate
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
 
         <Typography variant="body2" component="p">
@@ -177,7 +196,7 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           Moderate
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
 
         <Typography variant="body2" component="p">
@@ -195,14 +214,16 @@ export default function SimpleCardcpPage() {
         <Typography className={classes.pos} color="textSecondary">
           Low
         </Typography>
-
+        {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
 
         <Typography variant="body1" component="p">
           For additional details on the Funds and their past performance details are as of 2015, please click here
         </Typography>
 
+        {/* CheckboxCPpage */}
         <CheckboxLabels/>
+        {/* ContainedButtonsCalculate */}
         <ContainedButtonsCalculate/>
 
         <Typography className={classes.pos} color="textSecondary">

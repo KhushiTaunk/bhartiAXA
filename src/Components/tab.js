@@ -13,6 +13,7 @@ import CustomizedTables2 from './table2(ViewDetailsTab)';
 import SimpleCard2ViewDtails from './SimpleCard2(ViewDetailsTab)';
 import SimpleCardCalculatePremium from './SimpleCard(CalculatePremiumTab)';
 
+{/* Tabs Wrapped Tool (eFutureInvest Page) */}
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -76,17 +77,26 @@ export default function TabsWrappedLabel() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index="one">
+        {/* CollapsibleTable */}
         <StickyHeadTable/>
       </TabPanel>
       
       <TabPanel value={value} index="two">
+        {/* SimpleCard1(ViewDetailsTab) */}
         <SimpleCardviewDetails1/>
+
+        {/* table1(ViewDetailsTab) */}
         <CustomizedTables1/>
+
+        {/* table2(ViewDetailsTab) */}
         <CustomizedTables2/>
+
+        {/* SimpleCard2(ViewDetailsTab) */}
         <SimpleCard2ViewDtails/>
       </TabPanel>
 
       <TabPanel value={value} index="three">
+        {/* SimpleCard(CalculatePremiumTab) */}
         <SimpleCardCalculatePremium/>
       </TabPanel>
     </div>
