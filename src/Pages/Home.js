@@ -11,20 +11,28 @@ import SimpleBackdrop3 from '../Components/BackdropQuestion3';
 import SimpleBackdrop4 from '../Components/BackdropQuestion4';
 import ContainedButtons from '../Components/ContainedButton(ReadMore)';
 import SimpleDialogDemo from '../Components/DialogBox(CustomizedQuote)';
+import Typography from '@material-ui/core/Typography';
+
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
             <p>
-                Welcome to your web application. Make something beautiful!
+                
             </p>
             
           <SimplePaper/>
           <SimpleCard/>
+
+          <Typography variant="h6" component="h2">
           <p>
-                Trending Now!
+
+          Trending Now!
+
           </p>
+          </Typography>
+          
           <TextMobileStepper/>
           <TextMobileStepper1/>
 
@@ -35,6 +43,8 @@ export default function Home() {
           <SimpleBackdrop4/>
           <ContainedButtons/>
           <SimpleDialogDemo/>
+          
+
 
         </Container>
         

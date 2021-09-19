@@ -24,7 +24,7 @@ export default function SimpleBackdrop1() {
   return (
     <div>
       <Button variant="outlined" color="primary" onClick={handleToggle}>
-        Show backdrop
+      What's the claim settlement ratio and the reasons for claim repudiation?
       </Button>
       <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
         <CircularProgress color="inherit" />

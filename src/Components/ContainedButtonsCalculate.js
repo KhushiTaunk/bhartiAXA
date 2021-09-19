@@ -10,16 +10,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContainedButtons() {
+export default function ContainedButtonsCalculate() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      
+ 
       <Button variant="contained" color="primary">
-        Read More
+        Calculate
       </Button>
-      
+     
     </div>
   );
 }

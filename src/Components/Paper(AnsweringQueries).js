@@ -1,13 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(0),
       width: theme.spacing(16),
       height: theme.spacing(16),
     },
@@ -20,7 +21,13 @@ export default function SimplePaperQueries() {
   return (
     <div className={classes.root}>
       <Paper elevation={0} />
-      <Paper />
+      <Typography variant="h6" component="h2">
+          <p>
+
+          Answering Your Queries
+
+          </p>
+          </Typography>
     </div>
   );
 }

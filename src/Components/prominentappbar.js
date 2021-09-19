@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 45,
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
@@ -42,15 +43,15 @@ export default function ProminentAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h5" noWrap>
-            Material-UI
-          </Typography>
+          
           <IconButton aria-label="search" color="inherit">
             <SearchIcon />
           </IconButton>
+          
           <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <MoreIcon />
+            <AccountCircleIcon/>
           </IconButton>
+          
         </Toolbar>
       </AppBar>
     </div>

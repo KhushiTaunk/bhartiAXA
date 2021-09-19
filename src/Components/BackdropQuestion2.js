@@ -24,7 +24,7 @@ export default function SimpleBackdrop2() {
   return (
     <div>
       <Button variant="outlined" color="primary" onClick={handleToggle}>
-        Show backdrop
+      How do I know my ideal Sum Assured?
       </Button>
       <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
         <CircularProgress color="inherit" />

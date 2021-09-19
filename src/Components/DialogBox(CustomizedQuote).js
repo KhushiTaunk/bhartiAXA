@@ -83,10 +83,13 @@ export default function SimpleDialogDemo() {
 
   return (
     <div>
-      <Typography variant="subtitle1">Selected: {selectedValue}</Typography>
+      <Typography variant="subtitle1">
+        Get Customized Quote
+        With Bharti AXA Life insurance guaranteed income pro, get insurance cover and assured returns on maturity
+         {selectedValue}</Typography>
       <br />
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open simple dialog
+      <Button variant="contained" color="primary" onClick={handleClickOpen}>
+      Buy Now
       </Button>
       <SimpleDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
     </div>

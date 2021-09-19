@@ -24,7 +24,7 @@ export default function SimpleBackdrop3() {
   return (
     <div>
       <Button variant="outlined" color="primary" onClick={handleToggle}>
-        Show backdrop
+      How much life insurance cover do I need?
       </Button>
       <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
         <CircularProgress color="inherit" />

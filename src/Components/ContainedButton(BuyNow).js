@@ -10,16 +10,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContainedButtons() {
+export default function ContainedButtonsBuyNow() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      
-      <Button variant="contained" color="primary">
-        Read More
+     <Button variant="contained" color="primary">
+        Buy Now
       </Button>
-      
     </div>
   );
 }

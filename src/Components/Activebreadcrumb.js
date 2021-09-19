@@ -13,10 +13,13 @@ export default function ActiveLastBreadcrumb() {
   return (
     <Breadcrumbs aria-label="breadcrumb">
       <Link color="inherit" href="/" onClick={handleClick}>
-        Material-UI
+        Home
       </Link>
       <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-        Core
+        Life Insurance
+      </Link>
+      <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
+        Investment Plans
       </Link>
       <Link
         color="textPrimary"
@@ -24,7 +27,7 @@ export default function ActiveLastBreadcrumb() {
         onClick={handleClick}
         aria-current="page"
       >
-        Breadcrumb
+        eFuture Invest
       </Link>
     </Breadcrumbs>
   );
