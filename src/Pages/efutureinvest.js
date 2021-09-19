@@ -11,15 +11,25 @@ export default function Efutureinvest() {
   return (
     <React.Fragment>
         <Container fixed>
+
+           {/* Folder-Activebreadcrumb */}
           <ActiveLastBreadcrumb/>
+
+            {/* Folder-Simplecard(BhartiAxaStart) */}
            <SimpleCardStartBhartiAXA/>
+
+             {/* Folder-SimpleCard(4Reasons) */}
            <SimpleCard4Reasons/>
+
+             {/* Folder-simplecard(PlanDetails) */}
             <SimpleCardPlanDetails/>
+
+             {/* Folder-tab */}
             <TabsWrappedLabel/>
+
+             {/* Folder-ContainedButtonDownloadBrochure */}           
             <ContainedButtonsDowloadBrochure/>
-            <p>
-                
-            </p>
+
           
         </Container>
     </React.Fragment>

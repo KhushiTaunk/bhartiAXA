@@ -20,6 +20,8 @@ import BasicTextFieldsallocation from './TextFieldAllocation';
 import CheckboxLabels from './CheckboxCPpage';
 import ContainedButtonsCalculate from './ContainedButtonsCalculate';
 
+
+{/* Simple Card (CalculatePremiumPage) */}
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -110,7 +112,62 @@ export default function SimpleCardcpPage() {
           {'Investment Fund'}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
+          Grow Opportunity Plus Fund
+        </Typography>
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Risk-Return Potential'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          High
+        </Typography>
+
+        <BasicTextFieldsallocation/>
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Investment Fund'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          Build India Fund
+        </Typography>
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Risk-Return Potential'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          High
+        </Typography>
+
+        <BasicTextFieldsallocation/>
+        
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Investment Fund'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
           Save 'n' Grow Money Fund
+        </Typography>
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Risk-Return Potential'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          Moderate
+        </Typography>
+
+        <BasicTextFieldsallocation/>
+
+        <Typography variant="body2" component="p">
+          <br />
+          {'Investment Fund'}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          Steady Money Fund
         </Typography>
 
         <Typography variant="body2" component="p">
@@ -160,9 +217,7 @@ export default function SimpleCardcpPage() {
           Insurance is a contract of utmost good faith and the Life to be Insured/Proposer (If different from Life to be Insured) is required to disclose all material facts to the insurer. All answers to the questions stipulated in this Proposal form are the basic of and are an inseparable part of the policy of insurance. In case of doubt as to whether a fact is material or not, the fact should be disclosed. Please answer all questions. This product brochure is indicative of the terms, conditions, warranties and exceptions contained in the insurance policy bond
         </Typography>
 
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
     </Card>
   );
 }

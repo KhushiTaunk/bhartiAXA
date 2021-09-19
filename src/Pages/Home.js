@@ -18,30 +18,39 @@ export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
-            <p>
-                
-            </p>
-            
+
+          {/* Folder-Paper(BigQuestions) */}
           <SimplePaper/>
+
+          {/* Folder-simplecard(LifeInsurancePossibility) */}
           <SimpleCard/>
 
           <Typography variant="h6" component="h2">
-          <p>
-
           Trending Now!
-
-          </p>
           </Typography>
           
+          {/* Folder-TrendingNowTextmobilestepper */}
           <TextMobileStepper/>
+
+          {/* Folder-TestimonialsTextMobileStepper */}
           <TextMobileStepper1/>
 
+          {/* Folder-Paper(AnsweringQueries) */}
           <SimplePaperQueries/>
+
+          {/* Folder-BackdropQuestion1 */}
           <SimpleBackdrop1/>
+          {/* Folder-BackdropQuestion2 */}
           <SimpleBackdrop2/>
+          {/* Folder-BackdropQuestion3 */}
           <SimpleBackdrop3/>
+          {/* Folder-BackdropQuestion4 */}
           <SimpleBackdrop4/>
+
+          {/* Folder-ContainedButton(ReadMore) */}
           <ContainedButtons/>
+
+          {/* Folder-DialogBox(CustomizedQuote) */}
           <SimpleDialogDemo/>
           
 

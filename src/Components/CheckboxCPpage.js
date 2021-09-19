@@ -9,6 +9,7 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 
+{/* Checkbox Labels (Inside SimpleCard(cpPage).js) */}
 const GreenCheckbox = withStyles({
   root: {
     color: green[400],

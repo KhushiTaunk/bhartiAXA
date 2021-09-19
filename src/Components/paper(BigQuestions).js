@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
+
+{/* Simple paper (Home Page) */}
+{/* For writing the headline 'Are these your life's BIG Questions?' */}
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',

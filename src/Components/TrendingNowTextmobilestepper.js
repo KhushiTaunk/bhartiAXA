@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
+{/* Header (Prominent App Bar) */}
 const tutorialSteps = [
   {
     label: 'San Francisco – Oakland Bay Bridge, United States',

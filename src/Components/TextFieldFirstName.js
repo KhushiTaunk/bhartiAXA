@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
+{/* Text Field Input (Inside folder-SimpleCard(cpPage) */}
+{/* For entering the First name in calculate premium page */}
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {

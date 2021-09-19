@@ -18,7 +18,7 @@ import BasicButtonGroupIcons from './Components/ButtonGroupFooterIcons';
 function App() {
   return (
     <div className="App">
-      {/* Header (Navigation Bar) */}
+      {/* Header (Prominent App Bar) */}
       <header className="App-header">
       <ProminentAppBar/>
       </header>

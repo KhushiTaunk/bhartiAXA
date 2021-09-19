@@ -6,6 +6,8 @@ export default function CalculatePremiumPage() {
   return (
     <React.Fragment>
         <Container fixed>
+
+          {/* Folder-SimpleCard(cpPage) */}   
           <SimpleCardcpPage/>
           
         </Container>
