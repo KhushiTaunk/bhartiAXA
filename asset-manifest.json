@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/bhartiAXA/static/css/main.915667ca.chunk.css",
-    "main.js": "/bhartiAXA/static/js/main.94260141.chunk.js",
-    "main.js.map": "/bhartiAXA/static/js/main.94260141.chunk.js.map",
+    "main.css": "/bhartiAXA/static/css/main.cea2fa2b.chunk.css",
+    "main.js": "/bhartiAXA/static/js/main.278c9d60.chunk.js",
+    "main.js.map": "/bhartiAXA/static/js/main.278c9d60.chunk.js.map",
     "runtime-main.js": "/bhartiAXA/static/js/runtime-main.4874eddd.js",
     "runtime-main.js.map": "/bhartiAXA/static/js/runtime-main.4874eddd.js.map",
-    "static/js/2.ad32ae43.chunk.js": "/bhartiAXA/static/js/2.ad32ae43.chunk.js",
-    "static/js/2.ad32ae43.chunk.js.map": "/bhartiAXA/static/js/2.ad32ae43.chunk.js.map",
+    "static/js/2.822cfaf3.chunk.js": "/bhartiAXA/static/js/2.822cfaf3.chunk.js",
+    "static/js/2.822cfaf3.chunk.js.map": "/bhartiAXA/static/js/2.822cfaf3.chunk.js.map",
     "index.html": "/bhartiAXA/index.html",
-    "static/css/main.915667ca.chunk.css.map": "/bhartiAXA/static/css/main.915667ca.chunk.css.map",
-    "static/js/2.ad32ae43.chunk.js.LICENSE.txt": "/bhartiAXA/static/js/2.ad32ae43.chunk.js.LICENSE.txt"
+    "static/css/main.cea2fa2b.chunk.css.map": "/bhartiAXA/static/css/main.cea2fa2b.chunk.css.map",
+    "static/js/2.822cfaf3.chunk.js.LICENSE.txt": "/bhartiAXA/static/js/2.822cfaf3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4874eddd.js",
-    "static/js/2.ad32ae43.chunk.js",
-    "static/css/main.915667ca.chunk.css",
-    "static/js/main.94260141.chunk.js"
+    "static/js/2.822cfaf3.chunk.js",
+    "static/css/main.cea2fa2b.chunk.css",
+    "static/js/main.278c9d60.chunk.js"
   ]
 }
