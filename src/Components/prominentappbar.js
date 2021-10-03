@@ -8,7 +8,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
+{/* Prominent App Bar (Header) */}
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -35,23 +38,30 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
+        <Grid container spacing={4}>
+        <Grid item xs={3}>
           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
-            aria-label="open drawer"
-          >
+            aria-label="open drawer" >         
             <MenuIcon />
           </IconButton>
-          
+          </Grid>
+
+          <Grid item xs={3}>
           <IconButton aria-label="search" color="inherit">
             <SearchIcon />
           </IconButton>
-          
+          </Grid>
+
+          <Grid item xs={3}>  
           <IconButton aria-label="display more actions" edge="end" color="inherit">
             <AccountCircleIcon/>
           </IconButton>
-          
+          </Grid>
+
+        </Grid>
         </Toolbar>
       </AppBar>
     </div>

@@ -6,32 +6,35 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import { Grid } from '@material-ui/core';
 
+{/* Text Mobile Stepper (Home Page) */}
+{/* To add stepper for the testimonials of bharti AXA users */}
 const tutorialSteps = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'Stories',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://videohive.img.customer.envatousercontent.com/files/9801a0d0-a4ec-4dff-9037-33d9fb90db8b/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=bebdaff2fc7523a2b9589bce0cd6c00d',
   },
   {
-    label: 'Bird',
+    label: 'Stories',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2017/11/17/639329-indian-men.jpg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Stories',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://www.bridgeindia.org.uk/wp-content/uploads/2019/05/Kamini-Gupta.xa691a87f.jpg',
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    label: 'Stories',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://asiasociety.org/sites/default/files/styles/1200w/public/2019-10/Parag%20Khanna_Photo1%20-%20PC%20Parag%20Khanna%201200x800.png',
   },
   {
-    label: 'Goč, Serbia',
+    label: 'Stories',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://en-media.thebetterindia.com/uploads/2018/06/Dhivya-Suryadevara-Khushi-Financial-Services-FB.jpg?compress=true&quality=90&w=360&dpr=2.6',
   },
 ];
 
@@ -53,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     display: 'block',
     width: '100%',
+   
   },
 }));
 
@@ -72,14 +76,31 @@ export default function TextMobileStepper1() {
 
   return (
     <div className={classes.root}>
+      <Grid container spacing={2}>
+      <Grid item xs={12} md={12}>
       <Paper square elevation={0} className={classes.header}>
         <Typography>{tutorialSteps[activeStep].label}</Typography>
       </Paper>
+      </Grid>
+      </Grid>
+
+      <Grid container spacing={2}>
+      <Grid item xs={12} md={12}>
       <img
         className={classes.img}
         src={tutorialSteps[activeStep].imgPath}
         alt={tutorialSteps[activeStep].label}
       />
+      </Grid>
+      <Grid item xs={12} md={12}>
+      <Paper square elevation={1} className={classes.body}>
+      <Typography>{tutorialSteps[activeStep].label}
+      Website journey was very simple and user friendly, Adviser has advised very nicely in simple manner. Advise to purchase a dual benefit plan(Shinning star) was good.
+      </Typography>     
+      </Paper>
+      </Grid>
+      </Grid>
+
       <MobileStepper
         steps={maxSteps}
         position="static"

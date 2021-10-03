@@ -6,7 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import BasicButtonGroupCopyrights from './ButtonGroupsFooterCopyrights';
+import { Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
+{/* Simple card (Footer) */}
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -29,22 +32,26 @@ export default function SimpleCardFooter() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} >
+      <Container fixed>
+        <Grid container spacing={12}>
       <CardContent>
 
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" align= "left">
         IRDAI Notice on Spurious Calls
         </Typography>
-        <Typography variant="body2" component="p">
+        <Typography variant="body2" component="p" align= "left">
         BEWARE OF SPURIOUS PHONE CALLS AND FICTIOUS/FRAUDULENT OFFERS
           <br />
           {'IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.'}
         </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="textSecondary" gutterBottom align= "left">
           Copyrights. All Rights Reserved
         </Typography>
       </CardContent>
       <BasicButtonGroupCopyrights/>
+      </Grid>
+      </Container>
     </Card>
   );
 }

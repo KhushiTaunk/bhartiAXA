@@ -7,6 +7,9 @@ import EmailIcon from '@material-ui/icons/Email';
 import SmsIcon from '@material-ui/icons/Sms';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
+
+{/* Basic Button Group (Footer) */}
+{/* For adding icons along with names*/}
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -24,7 +27,7 @@ export default function BasicButtonGroupIcons() {
   return (
     <div className={classes.root}>
 
-      <ButtonGroup variant="text" color="Primary" aria-label="text primary button group">
+      <ButtonGroup variant="text" color="#00529c" aria-label="text primary button group">
         <Button>
         <CallIcon/>
             Call 

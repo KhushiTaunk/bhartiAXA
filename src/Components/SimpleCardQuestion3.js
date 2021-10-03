@@ -5,10 +5,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import AlignItemsList from './list(Lifeinsuranceplan)';
+import HelpIcon from '@material-ui/icons/Help';
+import { Grid } from '@material-ui/core';
 
-{/* Simple Card (Home page) */}
-{/* Provides life insurance plan for every possibilty */}
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -26,20 +25,22 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function SimpleCardQuestion3() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
+     <Grid container wrap="nowrap" spacing={2}>
+          <Grid item>
+          <HelpIcon/>
+          </Grid>
       <CardContent>
-
-        <Typography variant="h6" component="h2">
-        Life Insurance Plan For Every Possibility
-        </Typography>
-        <AlignItemsList/>
-
+        <CardActions>
+        <Button size="small">How much life insurance cover do I need?</Button>
+      </CardActions>
       </CardContent>
+      </Grid>
     </Card>
   );
 }

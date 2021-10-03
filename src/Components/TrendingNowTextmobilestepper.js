@@ -6,16 +6,19 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import { Grid } from '@material-ui/core';
+import { Container } from 'react-dom';
 
-{/* Header (Prominent App Bar) */}
+{/* Text Mobile Stepper (Home Page) */}
 const tutorialSteps = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    
+    label: 'Media Speak',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'C:\Users\Khushi Taunk\Documents\GitHub\bhartiAXA\src\Assets\mediaspeak.png',
   },
   {
-    label: 'Bird',
+    label: 'Just Launched',
     imgPath:
       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
   },
@@ -74,13 +77,31 @@ export default function TextMobileStepper() {
   return (
     <div className={classes.root}>
       <Paper square elevation={0} className={classes.header}>
+        <Grid container spacing={1}>
+          <Grid item xs={12} md={12}>
         <Typography>{tutorialSteps[activeStep].label}</Typography>
+        </Grid>
+        </Grid>
       </Paper>
+      <Grid container spacing={1}>
+      <Grid item xs={6} md={6}>
+      <Paper square elevation={0} className={classes.body}>
+      <Typography align="left">{tutorialSteps[activeStep].label}
+      Bharti AXA urges you to choose certainty for important life goals with Guaranteed solutions
+      </Typography>     
+      <Typography align="left">{tutorialSteps[activeStep].label}
+      #savingsplan #Bhartiaxasmartplan
+      </Typography>
+      </Paper>
+      </Grid>
+       <Grid item xs={6} md={6}>
       <img
         className={classes.img}
         src={tutorialSteps[activeStep].imgPath}
         alt={tutorialSteps[activeStep].label}
       />
+      </Grid>
+      </Grid>
       <MobileStepper
         steps={maxSteps}
         position="static"

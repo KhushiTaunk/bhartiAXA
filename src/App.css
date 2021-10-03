@@ -7,13 +7,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  color: white;
+  background-color: white ;
+  color: #00529c;
 }
 
 .App-footer {
-  background-color: #282c34;
-  color: white;
+  background-color: #dce7f1;
+  color: #00529c;
   position: relative;
   left: 0;
   bottom: 0;
