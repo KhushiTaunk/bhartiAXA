@@ -7,10 +7,12 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import HelpIcon from '@material-ui/icons/Help';
 import { Grid } from '@material-ui/core';
+import CustomizedDialogs1 from '../Components/DialogboxQues1';
 
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    backgroundColor: '#dff2f9'
   },
   bullet: {
     display: 'inline-block',
@@ -31,13 +33,15 @@ export default function SimpleCardQuestion1() {
 
   return (
     <Card className={classes.root}>
-        <Grid container wrap="nowrap" spacing={2}>
+        <Grid container wrap="nowrap" spacing={2}
+        direction="row"
+        alignItems="center">
           <Grid item>
-          <HelpIcon/>
+          <HelpIcon  style={{color:"#0795d3"}}/>
           </Grid>
       <CardContent>
         <CardActions>
-        <Button size="small">What's the claim settlement ratio and the reasons for claim repudiation?</Button>
+        <Button size="small"><CustomizedDialogs1/></Button>
       </CardActions>
       </CardContent>
       </Grid>

@@ -7,10 +7,12 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import HelpIcon from '@material-ui/icons/Help';
 import { Grid } from '@material-ui/core';
+import CustomizedDialogs2 from './DialogboxQues2';
 
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    backgroundColor: '#fef6e2'
   },
   bullet: {
     display: 'inline-block',
@@ -31,13 +33,15 @@ export default function SimpleCardQuestion2() {
 
   return (
     <Card className={classes.root}>
-        <Grid container wrap="nowrap" spacing={2}>
+        <Grid container wrap="nowrap" spacing={2}
+                direction="row"
+                alignItems="center">
           <Grid item>
-          <HelpIcon/>
+          <HelpIcon  style={{color:"#fbbb2c"}}/>
           </Grid>
       <CardContent>
         <CardActions>
-        <Button size="small">How do I know my ideal Sum Assured?</Button>
+        <Button size="small"><CustomizedDialogs2/></Button>
       </CardActions>
       </CardContent>
       </Grid>

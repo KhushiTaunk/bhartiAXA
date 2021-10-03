@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     maxWidth: '36ch',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: '#dde6f1',
   },
   inline: {
     display: 'inline',
@@ -29,7 +29,7 @@ export default function AlignItemsList() {
     <List className={classes.root}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <VerifiedUserIcon/>
+          <VerifiedUserIcon style={{color:"#00529b"}}/>
         </ListItemAvatar>
         <ListItemText
           primary="Protect Life"
@@ -39,7 +39,7 @@ export default function AlignItemsList() {
                 component="span"
                 variant="body2"
                 className={classes.inline}
-                color="textPrimary"
+              
               >
                 Explore for our term insurance plans
               </Typography>
@@ -50,7 +50,7 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-        <TrackChangesIcon/>
+        <TrackChangesIcon  style={{color:"#00529b"}}/>
         </ListItemAvatar>
         <ListItemText
           primary="Achieve Goals"
@@ -60,7 +60,7 @@ export default function AlignItemsList() {
                 component="span"
                 variant="body2"
                 className={classes.inline}
-                color="textPrimary"
+
               >
                 Get guaranteed returns from our savings plan
               </Typography>
@@ -71,7 +71,7 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-        <AccountBalanceIcon/>
+        <AccountBalanceIcon style={{color:"#00529b"}}/>
         </ListItemAvatar>
         <ListItemText
           primary="Create Wealth"
@@ -81,7 +81,7 @@ export default function AlignItemsList() {
                 component="span"
                 variant="body2"
                 className={classes.inline}
-                color="textPrimary"
+
               >
                 Choose from our spread of ULIP Plans
               </Typography>

@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+{/* Contained Button (Home Page) */}
+{/* For adding button called 'Read More' in the FAQ section */}
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {

@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Link, Router} from "react-router-dom";
 
 {/* Simple Card (Inside Tabs.js) */}
 {/* For adding Simple Card under calculate premium tab in eFutureinvest Page */}
@@ -31,19 +32,15 @@ export default function SimpleCardCalculatePremium() {
 
   return (
     <Card className={classes.root}>
-      <CardContent>
 
-        <Typography variant="h8" component="h2">
-        Calculate Your Premium
-        </Typography>
-        <Typography variant="h5" component="h2">
-        Simply fill in a few of your details and let us help calculate a specific premium rate for you.
-        </Typography>
-
-      </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button variant="h6" component="h2">Calculate Your Premium</Button>
       </CardActions>
+      <CardContent>
+      <Typography size="small" align="left">
+        Simply fill in a few of your details and let us help calculate a specific premium rate for you.
+      </Typography>
+      </CardContent>
     </Card>
   );
 }

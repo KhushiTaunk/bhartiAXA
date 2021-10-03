@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-{/* Form Props Text Field (Inside folder-SimpleCard(cpPage).js) */}
+{/* Form Props Text Field (Inside SimpleCard(cpPage).js) */}
 {/* For entering the modal premium value */}
 const useStyles = makeStyles((theme) => ({
   root: {

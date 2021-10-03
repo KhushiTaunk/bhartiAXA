@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+{/* Contained Button (Inside SimpleCard(cpPage).js) */}
+{/* To enable calculating of quite quote for premium plan */}
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {

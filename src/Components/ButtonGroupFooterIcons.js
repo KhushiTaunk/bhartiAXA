@@ -29,17 +29,17 @@ export default function BasicButtonGroupIcons() {
 
       <ButtonGroup variant="text" color="#00529c" aria-label="text primary button group">
         <Button>
-        <CallIcon/>
+        <CallIcon  style={{color:"#00529b"}}/>
             Call 
         </Button>
         <Button>
-            <EmailIcon/>Email
+            <EmailIcon style={{color:"#00529b"}}/>Email
         </Button>
         <Button>
-            <SmsIcon/>SMS
+            <SmsIcon style={{color:"#00529b"}}/>SMS
         </Button>
         <Button>
-            <WhatsAppIcon/>Whatsapp
+            <WhatsAppIcon style={{color:"#00529b"}}/>Whatsapp
         </Button>
       </ButtonGroup>
     </div>

@@ -7,10 +7,12 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import HelpIcon from '@material-ui/icons/Help';
 import { Grid } from '@material-ui/core';
+import CustomizedDialogs3 from './DialogboxQues3';
 
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    backgroundColor: '#feebe9'
   },
   bullet: {
     display: 'inline-block',
@@ -31,13 +33,15 @@ export default function SimpleCardQuestion3() {
 
   return (
     <Card className={classes.root}>
-     <Grid container wrap="nowrap" spacing={2}>
+     <Grid container wrap="nowrap" spacing={2}
+             direction="row"
+             alignItems="center">
           <Grid item>
-          <HelpIcon/>
+          <HelpIcon  style={{color:"#f3725e"}}/>
           </Grid>
       <CardContent>
         <CardActions>
-        <Button size="small">How much life insurance cover do I need?</Button>
+        <Button size="small"><CustomizedDialogs3/></Button>
       </CardActions>
       </CardContent>
       </Grid>

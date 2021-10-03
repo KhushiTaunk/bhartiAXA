@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 
+{/* Floating Action Button (Footer) */}
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {

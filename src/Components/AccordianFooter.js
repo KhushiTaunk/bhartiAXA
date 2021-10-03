@@ -34,12 +34,13 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          
         >
-          <Typography className={classes.heading}>Popular Links</Typography>
+          <Typography className={classes.heading}  style={{color:"#00529b"}}>Popular Links</Typography>
 
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography  style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
            Premium Payment Options
            </Grid>
@@ -76,11 +77,11 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Most Read</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Most Read</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
            Premium Payment Options
            </Grid>
@@ -113,11 +114,11 @@ export default function SimpleAccordion() {
           aria-controls="panel3a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Life Insurance</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Life Insurance</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            Term Insurance
@@ -153,11 +154,11 @@ export default function SimpleAccordion() {
           aria-controls="panel4a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>About Us</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>About Us</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            About Bharti
@@ -187,11 +188,11 @@ export default function SimpleAccordion() {
           aria-controls="panel5a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Customer Service</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Customer Service</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            Login
@@ -220,11 +221,11 @@ export default function SimpleAccordion() {
           aria-controls="panel6a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Claim Center</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Claim Center</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            Know the Claim Process
@@ -245,11 +246,11 @@ export default function SimpleAccordion() {
           aria-controls="panel7a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Join Bharti AXA Life</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Join Bharti AXA Life</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            Careers
@@ -272,10 +273,10 @@ export default function SimpleAccordion() {
           aria-controls="panel8a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Contact Us</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Contact Us</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
           <Typography>
           <Grid item xs={12} md={12}>
           </Grid>
@@ -293,11 +294,11 @@ export default function SimpleAccordion() {
           aria-controls="panel9a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Key Links</Typography>
+          <Typography className={classes.heading} style={{color:"#00529b"}}>Key Links</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          <Typography>
+          <Typography style={{color:"#00529b"}}>
+          <Typography style={{color:"#00529b"}}>
           <Grid item xs={12} md={12}>
           </Grid>
            Insurance Ombudsman

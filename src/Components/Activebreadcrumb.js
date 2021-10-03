@@ -2,7 +2,8 @@ import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 
-{/* Efutureinvest page */}
+
+{/* Active last breadcrumb (Efutureinvest page) */}
 
 function handleClick(event) {
   event.preventDefault();
@@ -12,7 +13,7 @@ function handleClick(event) {
 export default function ActiveLastBreadcrumb() {
   return (
     <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={handleClick}>
+      <Link color="inherit" href="/home" onClick={handleClick}>
         Home
       </Link>
       <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>

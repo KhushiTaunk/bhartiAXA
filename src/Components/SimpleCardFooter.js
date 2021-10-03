@@ -13,6 +13,7 @@ import { Container } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    backgroundColor: '#00529a'
   },
   bullet: {
     display: 'inline-block',
@@ -37,15 +38,15 @@ export default function SimpleCardFooter() {
         <Grid container spacing={12}>
       <CardContent>
 
-        <Typography variant="h5" component="h2" align= "left">
+        <Typography variant="h5" component="h2" align= "left" style={{color:"#dde6f1"}}>
         IRDAI Notice on Spurious Calls
         </Typography>
-        <Typography variant="body2" component="p" align= "left">
+        <Typography variant="body2" component="p" align= "left" style={{color:"#dde6f1"}}>
         BEWARE OF SPURIOUS PHONE CALLS AND FICTIOUS/FRAUDULENT OFFERS
           <br />
           {'IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.'}
         </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom align= "left">
+        <Typography className={classes.title} color="textSecondary" gutterBottom align= "left" style={{color:"#dde6f1"}}>
           Copyrights. All Rights Reserved
         </Typography>
       </CardContent>

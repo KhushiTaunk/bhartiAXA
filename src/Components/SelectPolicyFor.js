@@ -6,6 +6,8 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
+{/* Simple select (Inside SimpleCard(cpPage).js) */}
+{/* For selecting whom the policy is being bought for */}
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),

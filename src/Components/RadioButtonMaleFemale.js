@@ -5,6 +5,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
+{/* Form Control Label Placement (Inside SimpleCard(cpPage).js) */}
+{/* Radio button for choosing the gender */}
 export default function FormControlLabelPlacement() {
   return (
     <FormControl component="fieldset">

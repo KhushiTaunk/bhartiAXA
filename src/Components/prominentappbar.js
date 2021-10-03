@@ -10,6 +10,9 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Grid } from '@material-ui/core';
 import { Container } from '@material-ui/core';
+import bhartiaxalogo from '../Assets/bhartiaxalogo.png';
+import { Button } from '@material-ui/core';
+import {Link, Router} from "react-router-dom";
 
 {/* Prominent App Bar (Header) */}
 const useStyles = makeStyles((theme) => ({
@@ -20,10 +23,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   toolbar: {
-    minHeight: 45,
+    minHeight: 35,
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
+    backgroundColor: '#ffffff'
   },
   title: {
     flexGrow: 1,
@@ -38,26 +42,35 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
-        <Grid container spacing={4}>
+        <Grid container spacing={4} direction="row"
+        alignItems="center">
         <Grid item xs={3}>
           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer" >         
-            <MenuIcon />
+            <MenuIcon style={{color:"#8c8c8c"}}/>
           </IconButton>
           </Grid>
 
+          <Link to={process.env.PUBLIC_URL + '/home'}>
+          <Button>
+          <Grid item xs={3} >
+            <img src={bhartiaxalogo} className="bhartiaxalogo" alt="bhartiaxalogo" width="80" height="70%"></img>
+          </Grid>
+          </Button>
+          </Link>
+
           <Grid item xs={3}>
           <IconButton aria-label="search" color="inherit">
-            <SearchIcon />
+            <SearchIcon  style={{color:"#8c8c8c"}}/>
           </IconButton>
           </Grid>
 
           <Grid item xs={3}>  
           <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <AccountCircleIcon/>
+            <AccountCircleIcon style={{color:"#8c8c8c"}}/>
           </IconButton>
           </Grid>
 

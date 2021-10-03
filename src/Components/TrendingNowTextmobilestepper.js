@@ -8,34 +8,34 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Grid } from '@material-ui/core';
 import { Container } from 'react-dom';
+import Promos1 from '../Assets/Promos1.png';
+import promo2 from '../Assets/promo2.png';
+import promo3 from '../Assets/promo3.png';
+import promo4 from '../Assets/promo4.png';
+import promo5 from '../Assets/promo5.png';
 
 {/* Text Mobile Stepper (Home Page) */}
 const tutorialSteps = [
   {
     
     label: 'Media Speak',
-    imgPath:
-      'C:\Users\Khushi Taunk\Documents\GitHub\bhartiAXA\src\Assets\mediaspeak.png',
+    imgPath:Promos1,
   },
   {
     label: 'Just Launched',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+    imgPath:promo2,
   },
   {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+    label: 'We won',
+    imgPath:promo3,
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Most Read',
+    imgPath:promo4,
   },
   {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+    label: '99.05%',
+    imgPath:promo5,
   },
 ];
 

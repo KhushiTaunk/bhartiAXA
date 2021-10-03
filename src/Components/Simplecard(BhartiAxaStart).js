@@ -35,11 +35,11 @@ export default function SimpleCardStartBhartiAXA() {
   return (
     <Card className={classes.root}>
       <Container fixed>
-        <Grid container spacing={12}>
+
 
       <CardContent>
-      <Grid item xs={12} md={12}>
-          </Grid>
+      <Grid container spacing={12}>
+
         <Grid item xs={12} md={12}>
         <Typography variant="h5" component="h2" align="left">
           Bharti AXA Life eFuture Invest
@@ -65,14 +65,12 @@ export default function SimpleCardStartBhartiAXA() {
         </Typography>
         <Grid item xs={12} md={12}>
           </Grid>
+          </Grid>
 
-          <Grid container spacing={4}>
-        <Grid item xs={12} md={12}>
+        <Grid container spacing={12}>  
         <ContainedButtonsBuyNow/>
         </Grid>
-        </Grid>
       </CardContent>
-      </Grid>
       </Container>
     </Card>
   );

@@ -15,14 +15,14 @@ const columns = [
  
   {
     id: 'population',
-    label: 'Population',
+    label: 'Parameter',
     minWidth: 170,
     align: 'left',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'size',
-    label: 'Size\u00a0(km\u00b2)',
+    label: 'Eligibility',
     minWidth: 170,
     align: 'left',
     format: (value) => value.toLocaleString('en-US'),

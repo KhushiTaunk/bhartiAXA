@@ -12,6 +12,7 @@ import AlignItemsList from './list(Lifeinsuranceplan)';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    backgroundColor: '#dde6f1'
   },
   bullet: {
     display: 'inline-block',

@@ -11,7 +11,8 @@ import ContainedButtons from '../Components/ContainedButton(ReadMore)';
 import SimpleDialogDemo from '../Components/DialogBox(CustomizedQuote)';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-import MediaCard from '../Components/CardBigQuestionsHomePage';
+import Questionimage from '../Assets/Questionimage.png';
+
 
 export default function Home() {
   return (
@@ -23,10 +24,12 @@ export default function Home() {
           </Grid>
           
           <Grid item xs={12} md={12}>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h5" component="h2" >
           Are these your Life's BIG Questions?
-          <MediaCard/>
           </Typography>
+          </Grid>
+          <Grid item xs={12} md={12}>
+            <img src={Questionimage} className="Questionimage" alt="Questionimage" width="340" height="100%"></img>
           </Grid>
 
           <Grid item xs={12} md={12}>
