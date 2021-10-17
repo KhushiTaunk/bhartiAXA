@@ -39,17 +39,17 @@ export default function SimpleCard2ViewDtails() {
       <Grid item xs={12} md={12}>
        </Grid>
        <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos}  style={{color:"#00529b"}} align="left">
         Fund Options
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-        You have option to invest through multiple fund options available with us and can choose from an array of 6 funds.
+        You have option to invest through multiple fund options available with us and can choose from an array of 6 funds.     
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} style={{color:"#00529b"}} align="left">
         Extendable Investment Period (Settlement Period)
         </Typography>
         </Grid>
@@ -59,7 +59,7 @@ export default function SimpleCard2ViewDtails() {
         </Typography>       
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} style={{color:"#00529b"}} align="left">
         Liquidity Benefit with Partial Withdrawal
         </Typography>
         </Grid>
@@ -69,7 +69,7 @@ export default function SimpleCard2ViewDtails() {
         </Typography>       
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} style={{color:"#00529b"}} align="left">
         Tax benefits
         </Typography>
         </Grid>

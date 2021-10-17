@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper';
 {/* For adding customized table under view details tab in eFutureinvest Page */}
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: '#00529b',
     color: theme.palette.common.white,
   },
   body: {
@@ -33,7 +33,7 @@ function createData(name, calories) {
 }
 
 const rows = [
-  createData('Sum Assured', 'Higher of  10 times Annualized Premium<  Or (0.5* Policy Term* Annualized Premium)'),
+  createData('Sum Assured', '125% of Single Premium'),
 ];
 
 const useStyles = makeStyles({
@@ -48,11 +48,11 @@ export default function CustomizedTables1() {
   return (
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow>
+        <TableHead style={{color:"#00529b"}}>
+          <TableRow style={{color:"#00529b"}}>
             <StyledTableCell>
-            Premium Payment Term: 5 Years</StyledTableCell>
-            <StyledTableCell align="right"></StyledTableCell>
+              Premium Payment Term:  Single Pay</StyledTableCell>
+            <StyledTableCell align="right" style={{color:"#00529b"}}></StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>

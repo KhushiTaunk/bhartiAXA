@@ -9,12 +9,13 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import FloatingActionButtons from './Components/FloatingActionButton';
-import SimpleAccordion from './Components/AccordianFooter';
-import SimpleCardFooter from './Components/SimpleCardFooter';
-import BasicButtonGroupIcons from './Components/ButtonGroupFooterIcons';
+import FloatingActionButtons from './Components/Footer/FloatingActionButton';
+import SimpleAccordion from './Components/Footer/AccordianFooter';
+import SimpleCardFooter from './Components/Footer/SimpleCardFooter';
+import BasicButtonGroupIcons from './Components/Footer/ButtonGroupFooterIcons';
 import { Grid } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
+import { Button } from '@material-ui/core';
 
 function App() {
   return (
@@ -41,28 +42,44 @@ function App() {
         <Grid item xs={1}>
         </Grid>
         <Grid item xs={2}>
-        <InstagramIcon/>
+        <Button>
+        <InstagramIcon style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={2}>
-        <TwitterIcon/>
+        <Button>
+        <TwitterIcon style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={2}>
-        <FacebookIcon/>
+        <Button>
+        <FacebookIcon style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={2}>
-        <YouTubeIcon/>
+        <Button>
+        <YouTubeIcon style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={2}>
-        <LinkedInIcon/>
+        <Button>
+        <LinkedInIcon style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={12}>
-        <BasicButtonGroupIcons/>
+        <Button>
+        <BasicButtonGroupIcons style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={12}>
-        <SimpleAccordion/>
+        <Button>
+        <SimpleAccordion style={{color:"#00529b"}}/>
+        </Button>
         </Grid>
         <Grid item xs={12}>
+        <Button>
         <SimpleCardFooter/>
+        </Button>
         </Grid>
         </Grid>
       </footer>

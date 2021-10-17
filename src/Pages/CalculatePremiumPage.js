@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import SimpleCardcpPage from '../Components/SimpleCard(cpPage)';
+import SimpleCardcpPage from '../Components/calculatePremiumPage/SimpleCard(cpPage)';
 import { Grid } from '@material-ui/core';
+import SimplePaperDisclaimer from '../Components/calculatePremiumPage/DisclaimerCPpage';
 
 export default function CalculatePremiumPage() {
   return (
@@ -10,6 +11,7 @@ export default function CalculatePremiumPage() {
         <Container fixed>
           {/* Folder-SimpleCard(cpPage) */}   
           <SimpleCardcpPage/>
+          <SimplePaperDisclaimer/>
         </Container>
 
     </React.Fragment>

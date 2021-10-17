@@ -40,12 +40,12 @@ export default function SimpleCardPlanDetails() {
       <Grid item xs={12} md={12}>
       </Grid>
       <Grid item xs={12} md={12}>
-        <Typography variant="h5" component="h2" align="left">
+        <Typography variant="h8" component="h2" align="left" style={{color:"#212121"}}>
           Plan Details
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} color="textSecondary" align="left" style={{color:"#00529b"}}>
         How it works?
         </Typography>
         </Grid>
@@ -61,8 +61,7 @@ export default function SimpleCardPlanDetails() {
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-        <FiberManualRecordSharpIcon fontSize="small" color="action"/>
-          He starts paying ₹ 50,000* annually
+        {'\u2022'} He starts paying ₹ 50,000* annually
         </Typography>
         </Grid>
         <Grid item xs={6} md={6}>
@@ -72,8 +71,7 @@ export default function SimpleCardPlanDetails() {
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-        <FiberManualRecordSharpIcon fontSize="small" color="action"/>
-          He finishes paying annual premiums
+        {'\u2022'}  He finishes paying annual premiums
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
@@ -83,8 +81,7 @@ export default function SimpleCardPlanDetails() {
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-        <FiberManualRecordSharpIcon fontSize="small" color="action"/>
-        At an assumed 4% rate of return, he receives ₹ 2,59,676 (Fund Value) on maturity
+        {'\u2022'} At an assumed 4% rate of return, he receives ₹ 2,59,676 (Fund Value) on maturity
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
@@ -110,7 +107,7 @@ export default function SimpleCardPlanDetails() {
         <Grid item xs={1}>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos}  style={{color:"#00529b"}} align="left">
         Sad Demise
         </Typography>
         </Grid>

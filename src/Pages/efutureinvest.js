@@ -1,11 +1,12 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import ActiveLastBreadcrumb from '../Components/Activebreadcrumb';
-import SimpleCardStartBhartiAXA from '../Components/Simplecard(BhartiAxaStart)';
-import SimpleCard4Reasons from '../Components/SimpleCard(4Reasons)';
-import SimpleCardPlanDetails from '../Components/simplecard(PlanDetails)';
-import TabsWrappedLabel from '../Components/tab';
-import ContainedButtonsDowloadBrochure from '../Components/ContainedButtonDownloadBrochure';
+import ActiveLastBreadcrumb from '../Components/eFutureInvestPage/Activebreadcrumb';
+import SimpleCardStartBhartiAXA from '../Components/eFutureInvestPage/Simplecard(BhartiAxaStart)';
+import SimpleCard4Reasons from '../Components/eFutureInvestPage/SimpleCard(4Reasons)';
+import SimpleCardPlanDetails from '../Components/eFutureInvestPage/simplecard(PlanDetails)';
+import TabsWrappedLabel from '../Components/eFutureInvestPage/tab';
+import ContainedButtonsDowloadBrochure from '../Components/home page/ContainedButtonDownloadBrochure';
+
 
 export default function Efutureinvest() {
   return (
@@ -29,6 +30,7 @@ export default function Efutureinvest() {
 
              {/* Folder-ContainedButtonDownloadBrochure */}           
             <ContainedButtonsDowloadBrochure/>
+
 
             
         </Container>

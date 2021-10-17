@@ -9,10 +9,16 @@ import {Link, Router} from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
+      
       margin: theme.spacing(1),
+      backgroundColor: '#00529b',
+      borderColor: '#00529b',
+      boxShadow: 'none',
+      primary: '#00529b',
     },
   },
 }));
+
 
 export default function ContainedButtonsBuyNow() {
   const classes = useStyles();
@@ -21,7 +27,7 @@ export default function ContainedButtonsBuyNow() {
     <div className={classes.root}>
       <Link to={process.env.PUBLIC_URL + '/CalculatePremiumPage'}>
 
-     <Button variant="contained" color="primary">
+     <Button variant="contained"  style={{ backgroundColor: '#00529C', color: "#FFFFFF" }}>
         Buy Now
       </Button>
       </Link>

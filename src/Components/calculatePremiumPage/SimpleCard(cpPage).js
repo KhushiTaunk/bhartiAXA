@@ -52,7 +52,7 @@ export default function SimpleCardcpPage() {
       <CardContent>
         
       <Grid item xs={12} md={12}> 
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" style={{color:"#00529b"}}>
           Let's get a quick quote for your investment plan
         </Typography>
         </Grid>
@@ -156,7 +156,7 @@ export default function SimpleCardcpPage() {
 
 
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Grow Money Plus Fund
         </Typography>
         </Grid>
@@ -169,7 +169,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos}  style={{color:"#4EB546"}}>
           High
         </Typography>
         </Grid>
@@ -185,7 +185,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Grow Opportunity Plus Fund
         </Typography>
         </Grid>
@@ -197,7 +197,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           High
         </Typography>
         </Grid>
@@ -213,7 +213,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Build India Fund
         </Typography>
         </Grid>
@@ -225,7 +225,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           High
         </Typography>
         </Grid>
@@ -241,7 +241,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Save 'n' Grow Money Fund
         </Typography>
         </Grid>
@@ -253,7 +253,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Moderate
         </Typography>
         </Grid>
@@ -269,7 +269,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Steady Money Fund
         </Typography>
         </Grid>
@@ -281,7 +281,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Moderate
         </Typography>
         </Grid>
@@ -297,7 +297,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Safe Money Fund
         </Typography>
         </Grid>
@@ -309,7 +309,7 @@ export default function SimpleCardcpPage() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos} style={{color:"#4EB546"}}>
           Low
         </Typography>
         </Grid>
@@ -319,7 +319,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body1" component="p">
+        <Typography variant="body1" component="p" align="left" >
           For additional details on the Funds and their past performance details are as of 2015, please click here
         </Typography>
         </Grid>
@@ -338,16 +338,7 @@ export default function SimpleCardcpPage() {
           ADVT NO: II-Jan-2018-1588
         </Typography>
         </Grid>
-       
-        <Typography className={classes.pos} color="textSecondary">
-          Disclaimer
-        </Typography>
-     
-        <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
-          Insurance is a contract of utmost good faith and the Life to be Insured/Proposer (If different from Life to be Insured) is required to disclose all material facts to the insurer. All answers to the questions stipulated in this Proposal form are the basic of and are an inseparable part of the policy of insurance. In case of doubt as to whether a fact is material or not, the fact should be disclosed. Please answer all questions. This product brochure is indicative of the terms, conditions, warranties and exceptions contained in the insurance policy bond
-        </Typography>
-        </Grid>
+
         </Grid>
 
       </Container>

@@ -64,10 +64,12 @@ export default function TabsWrappedLabel() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example">
+      <AppBar position="static" color="default">
+        <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example" color="primary">
           <Tab
             value="one"
+            indicatorColor="secondary"
+            textColor="primary"
             label="Who Can Buy?"
             wrapped
             {...a11yProps('one')}

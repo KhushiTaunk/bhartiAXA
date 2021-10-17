@@ -20,22 +20,32 @@ const tutorialSteps = [
     
     label: 'Media Speak',
     imgPath:Promos1,
+    text: 'Bharti AXA urges you to choose certainty for the important life goals with our guaranteed solution',
+    hashtag: '#savingsplan #bhartaxasmartplan',
   },
   {
     label: 'Just Launched',
     imgPath:promo2,
+    text: 'Bharti AXA Flexi Term Pro',
+    hashtag: '#protectionplan #oneyearterm',
   },
   {
     label: 'We won',
     imgPath:promo3,
+    text: 'What is a Term Insurance Plan',
+    hashtag: '#terminsurance #1croretermplan',
   },
   {
     label: 'Most Read',
     imgPath:promo4,
+
+    text: 'Bharti AXA Life - 2 products "Guaranteed Income Pro" and "Flexi Term Pro" have won Product of the Year, 2021',
   },
   {
     label: '99.05%',
     imgPath:promo5,
+    text: 'That is our claims settlement ratio. Last year we paid out 99.05% of death claims on our life insurance policies',
+    hashtag: '#claimsettlementratio',
   },
 ];
 
@@ -43,20 +53,32 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
     flexGrow: 1,
+    // display: 'inline-block',
+    backgroundColor: '#FFECE8',
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     height: 50,
-    paddingLeft: theme.spacing(4),
+    paddingLeft: theme.spacing(0),
     backgroundColor: theme.palette.background.default,
+    backgroundColor: '#FFECE8',
+  },
+  body: {
+    fontSize: 20,
+    paddingLeft: theme.spacing(3),
+    paddingTop: theme.spacing(2),
+    backgroundColor: '#FFECE8',
+  },
+  step: {
+    backgroundColor: '#FFECE8',
   },
   img: {
-    height: 255,
-    maxWidth: 400,
+    height: 220,
+    width: '100%',
     overflow: 'hidden',
     display: 'block',
-    width: '100%',
+    // width: '100%',
   },
 }));
 
@@ -76,47 +98,52 @@ export default function TextMobileStepper() {
 
   return (
     <div className={classes.root}>
-      <Paper square elevation={0} className={classes.header}>
-        <Grid container spacing={1}>
-          <Grid item xs={12} md={12}>
-        <Typography>{tutorialSteps[activeStep].label}</Typography>
-        </Grid>
+      <Paper square elevation={0} className={classes.header} >
+        <Grid container spacing={1} >
+          <Grid item xs={12} sm={12} md={12}>
+            <Typography>{tutorialSteps[activeStep].label}</Typography>
+          </Grid>
         </Grid>
       </Paper>
-      <Grid container spacing={1}>
-      <Grid item xs={6} md={6}>
-      <Paper square elevation={0} className={classes.body}>
-      <Typography align="left">{tutorialSteps[activeStep].label}
-      Bharti AXA urges you to choose certainty for important life goals with Guaranteed solutions
-      </Typography>     
-      <Typography align="left">{tutorialSteps[activeStep].label}
-      #savingsplan #Bhartiaxasmartplan
-      </Typography>
-      </Paper>
+      <Grid container wrap="nowrap" spacing={2}
+        direction="row"
+        alignItems="center"
+      >
+        <Grid item xs={6} sm={6} md={6}>
+          <Paper square elevation={0} className={classes.body} >
+            <Typography style={{ textAlign: 'left', marginBottom: '8px' }}>
+              {tutorialSteps[activeStep].text}
+            </Typography>
+            <Typography style={{ textAlign: 'left' }}>
+              {tutorialSteps[activeStep].hashtag}
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={6} md={6}>
+          <img
+            className={classes.img}
+            src={tutorialSteps[activeStep].imgPath}
+            alt={tutorialSteps[activeStep].label}
+          />
+        </Grid>
       </Grid>
-       <Grid item xs={6} md={6}>
-      <img
-        className={classes.img}
-        src={tutorialSteps[activeStep].imgPath}
-        alt={tutorialSteps[activeStep].label}
-      />
-      </Grid>
-      </Grid>
-      <MobileStepper
+
+      <MobileStepper className={classes.step}
         steps={maxSteps}
         position="static"
-        variant="text"
+        variant="dots"
         activeStep={activeStep}
+
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-            Next
+            {/* Next */}
             {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
           </Button>
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-            Back
+            {/* Back */}
           </Button>
         }
       />

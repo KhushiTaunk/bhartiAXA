@@ -76,19 +76,19 @@ export default function CustomizedDialogs1() {
           Claim Settlement ratio is the ratio of Claims Settled against claims reported during the year. For detailed information, please refer http://www.bharti-axalife.com/public_disclosures.aspx (Form 39 & 40); some of the reasons for claim repudiation are as listed below
           </Typography>
           <Typography gutterBottom>
-          Disclosure of medical adversities
+          {'\u2022'}Disclosure of medical adversities
           </Typography>
           <Typography gutterBottom>
-          Incorrect disclosure of Age
+          {'\u2022'}Incorrect disclosure of Age
           </Typography>
           <Typography gutterBottom>
-          Incorrect disclosure of occupation/income
+          {'\u2022'}Incorrect disclosure of occupation/income
           </Typography>
           <Typography gutterBottom>
-          Non –disclosure of previous insurance
+          {'\u2022'}Non –disclosure of previous insurance
           </Typography>
           <Typography gutterBottom>
-          Fraud
+          {'\u2022'}Fraud
           </Typography>
           <Typography gutterBottom>
           Please note: The above-mentioned list is only indicative and not an exhaustive list.

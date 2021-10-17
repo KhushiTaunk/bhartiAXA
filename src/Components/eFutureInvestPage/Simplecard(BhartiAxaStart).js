@@ -41,22 +41,22 @@ export default function SimpleCardStartBhartiAXA() {
       <Grid container spacing={12}>
 
         <Grid item xs={12} md={12}>
-        <Typography variant="h5" component="h2" align="left">
+        <Typography variant="h8" component="h2" align="left" style={{color:"#212121"}}>
           Bharti AXA Life eFuture Invest
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} align="left" style={{color:"#00529b"}}>
         (UIN:130L063V02)
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} align="left" style={{color:"#00529b"}}>
         (ADVT NO:II-Dec-2019-2017)
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} align="left">
         In this policy, the investment risk in investment portfolio is borne by the policyholder.
         </Typography>
         </Grid>

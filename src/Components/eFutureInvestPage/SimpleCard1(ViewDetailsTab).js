@@ -39,7 +39,7 @@ export default function SimpleCardviewDetails1() {
       <Grid item xs={12} md={12}>
        </Grid>
        <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} align="left" style={{color:"#00529b"}}>
         An Affordable Online Plan
         </Typography>
         </Grid>
@@ -49,7 +49,7 @@ export default function SimpleCardviewDetails1() {
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos}  style={{color:"#00529b"}} align="left">
         Zero Allocation Charges
         </Typography>
         </Grid>
@@ -59,7 +59,7 @@ export default function SimpleCardviewDetails1() {
         </Typography>       
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} style={{color:"#00529b"}} align="left">
         Fixed Policy Term
         </Typography>
         </Grid>
@@ -69,7 +69,7 @@ export default function SimpleCardviewDetails1() {
         </Typography>       
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos}  style={{color:"#00529b"}} align="left">
         Limited Premium Payment
         </Typography>
         </Grid>
@@ -80,16 +80,16 @@ export default function SimpleCardviewDetails1() {
         </Grid>    
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-          Single pay
+        {'\u2022'} Single pay
         </Typography>    
         </Grid>    
         <Grid item xs={12} md={12}>
         <Typography variant="body2" component="p" align="left">
-          5 years
+        {'\u2022'} 5 years
         </Typography>    
         </Grid>   
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.pos} color="textSecondary" align="left">
+        <Typography className={classes.pos} style={{color:"#00529b"}} align="left">
           Death Benefit
         </Typography>
         </Grid>   
@@ -100,17 +100,17 @@ export default function SimpleCardviewDetails1() {
         </Grid> 
         <Grid item xs={12} md={12}> 
         <Typography variant="body2" component="p" align="left">
-          Sum Assured (net of partial withdrawals, made 12 months prior to death of the Life Insured)
+        {'\u2022'} Sum Assured (net of partial withdrawals, made 12 months prior to death of the Life Insured)
         </Typography>
         </Grid> 
         <Grid item xs={12} md={12}> 
         <Typography variant="body2" component="p" align="left">
-          105% of all premiums paid as on date of death. (excluding underwriting extra)
+        {'\u2022'} 105% of all premiums paid as on date of death. (excluding underwriting extra)
         </Typography>
         </Grid> 
         <Grid item xs={12} md={12}> 
         <Typography variant="body2" component="p" align="left">
-          Policy Fund Value as on the date of death of the Life Insured.
+        {'\u2022'}  Policy Fund Value as on the date of death of the Life Insured.
         </Typography>
         </Grid>   
         <Grid item xs={12} md={12}> 

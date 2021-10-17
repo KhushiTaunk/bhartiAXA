@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-{/* Contained Button (Inside SimpleCard(cpPage).js) */}
-{/* To enable calculating of quite quote for premium plan */}
+{/* Contained Button (Home Page) */}
+{/* For adding button called 'Read More' in the FAQ section */}
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -12,16 +12,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContainedButtonsCalculate() {
+export default function ContainedButtons() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
- 
-      <Button variant="contained" color="primary">
-        Calculate
+      
+      <Button variant="contained"  style={{ backgroundColor: '#00529C', color: "#FFFFFF" }}>
+        Read More
       </Button>
-     
+      
     </div>
   );
 }

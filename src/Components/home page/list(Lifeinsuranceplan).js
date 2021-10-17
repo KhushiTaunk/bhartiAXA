@@ -10,11 +10,12 @@ import Typography from '@material-ui/core/Typography';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: '36ch',
+    maxWidth: '130ch',
     backgroundColor: '#dde6f1',
   },
   inline: {
@@ -35,6 +36,7 @@ export default function AlignItemsList() {
           primary="Protect Life"
           secondary={
             <React.Fragment>
+
               <Typography
                 component="span"
                 variant="body2"
@@ -43,6 +45,7 @@ export default function AlignItemsList() {
               >
                 Explore for our term insurance plans
               </Typography>
+
             </React.Fragment>
           }
         />
