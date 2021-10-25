@@ -90,7 +90,7 @@ export default function SimpleCardcpPage() {
         <SimpleSelect/>
          </Grid>
 
-         <Divider variant="middle" />
+         <Divider variant="inset" component="li" />
         <Grid item xs={12} md={12}> 
         <Typography className={classes.pos}>
           Proposed Details
@@ -162,7 +162,7 @@ export default function SimpleCardcpPage() {
     
          </p>
 
-
+         <Divider variant="inset" component="li" />
          <Grid item xs={12} md={12}> 
          <Typography className={classes.pos}>
           Please allocate your Premium across different Funds

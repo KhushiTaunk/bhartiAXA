@@ -6,6 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AlignItemsList from './list(Lifeinsuranceplan)';
+import { Grid, Hidden } from '@material-ui/core';
+import AlignItemsListdesktop from './life insuranceListDesktop';
 
 {/* Simple Card (Home page) */}
 {/* Provides life insurance plan for every possibilty */}
@@ -38,7 +40,16 @@ export default function SimpleCard() {
         <Typography variant="h6" component="h2">
         Life Insurance Plan For Every Possibility
         </Typography>
-        <AlignItemsList/>
+        <Hidden only={['xs', 'sm', 'md']}>
+
+        <AlignItemsListdesktop/>
+        </Hidden>
+        
+        <Hidden only={['lg']}>
+          <Grid item xs={12} md={12}>
+          <AlignItemsList/>
+          </Grid>
+        </Hidden>
 
       </CardContent>
     </Card>
