@@ -21,6 +21,7 @@ import CheckboxLabels from './CheckboxCPpage';
 import ContainedButtonsCalculate from './ContainedButtonsCalculate';
 import { Grid } from '@material-ui/core';
 import { Container } from '@material-ui/core';
+import Divider from '@material-ui/core/Divider';
 
 
 {/* Simple Card (CalculatePremiumPage) */}
@@ -34,10 +35,30 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
+    fontFamily: 'Montserrat',
+    fontWeight: '500',
+    fontSize: 27,
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 20,
+    marginTop: 10
+    
+  },
+  para: {
+    fontFamily: 'SFPro',
+    fontWeight: 'normal',
     fontSize: 14,
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 15,
+    marginTop: 15
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 10,
+    fontFamily: 'SFPro',
+    fontSize: 16,
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -58,7 +79,7 @@ export default function SimpleCardcpPage() {
         </Grid>
         
         <Grid item xs={12} md={12}> 
-        <Typography variant="body1" component="p">
+        <Typography className={classes.para}>
           You are buying this policy for?
         </Typography>
         </Grid>
@@ -69,14 +90,15 @@ export default function SimpleCardcpPage() {
         <SimpleSelect/>
          </Grid>
 
+         <Divider variant="middle" />
         <Grid item xs={12} md={12}> 
-        <Typography variant="body1" component="p">
+        <Typography className={classes.pos}>
           Proposed Details
         </Typography>
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.para} color="textSecondary" gutterBottom>
           (Person who will pay premium for this policy)
         </Typography>
         </Grid>
@@ -111,6 +133,11 @@ export default function SimpleCardcpPage() {
         <FormControlLabelPlacement/>
         </Grid>
 
+        <Grid item xs={12} md={12}> 
+        <Typography className={classes.pos}>
+          Plan Details
+        </Typography>
+        </Grid>
         <Grid item xs={12} md={4}> 
         {/* SelectPremiumPaymentTerm */}
         <SimpleSelectPremiumPaymentTerm/>
@@ -135,25 +162,26 @@ export default function SimpleCardcpPage() {
     
          </p>
 
+
          <Grid item xs={12} md={12}> 
-        <Typography variant="body1" component="p">
+         <Typography className={classes.pos}>
           Please allocate your Premium across different Funds
         </Typography>
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.para} color="textSecondary" gutterBottom>
           (adding up to 100%)
         </Typography>
         </Grid>
 
+        <Grid item xs={12} md={4}>
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
         </Grid>
-
 
         <Grid item xs={12} md={12}> 
         <Typography className={classes.pos} style={{color:"#4EB546"}}>
@@ -162,7 +190,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -177,9 +205,11 @@ export default function SimpleCardcpPage() {
         {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         </Grid>
+       </Grid>
 
+       <Grid item xs={12} md={4}> 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
@@ -191,7 +221,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -205,9 +235,11 @@ export default function SimpleCardcpPage() {
         <Grid item xs={12} md={12}> 
         <BasicTextFieldsallocation/>
         </Grid>
+        </Grid>
 
+       <Grid item xs={12} md={4}> 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
@@ -219,7 +251,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -233,9 +265,12 @@ export default function SimpleCardcpPage() {
         {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         </Grid>
-        
+        </Grid>
+
+
+        <Grid item xs={12} md={4}>        
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
@@ -247,7 +282,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -261,9 +296,11 @@ export default function SimpleCardcpPage() {
         {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         </Grid>
+        </Grid>
 
+        <Grid item xs={12} md={4}> 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
@@ -275,7 +312,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -289,9 +326,11 @@ export default function SimpleCardcpPage() {
         {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         </Grid>
+        </Grid>
 
+        <Grid item xs={12} md={4}> 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Investment Fund'}
         </Typography>
@@ -303,7 +342,7 @@ export default function SimpleCardcpPage() {
         </Grid>
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           <br />
           {'Risk-Return Potential'}
         </Typography>
@@ -317,9 +356,11 @@ export default function SimpleCardcpPage() {
         {/* TextFieldAllocation */}
         <BasicTextFieldsallocation/>
         </Grid>
+        </Grid>
+
 
         <Grid item xs={12} md={12}> 
-        <Typography variant="body1" component="p" align="left" >
+        <Typography className={classes.para} align="left" >
           For additional details on the Funds and their past performance details are as of 2015, please click here
         </Typography>
         </Grid>
@@ -328,12 +369,12 @@ export default function SimpleCardcpPage() {
         {/* CheckboxCPpage */}
         <CheckboxLabels/>
         </Grid>
-        <Grid item xs={12} md={6}> 
+        <Grid item xs={12} md={12}> 
         {/* ContainedButtonsCalculate */}
         <ContainedButtonsCalculate/>
         </Grid>
 
-        <Grid item xs={12} md={6}> 
+        <Grid item xs={12} md={12}> 
         <Typography className={classes.pos} color="textSecondary">
           ADVT NO: II-Jan-2018-1588
         </Typography>

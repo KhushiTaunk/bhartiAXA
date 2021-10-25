@@ -8,11 +8,11 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Grid } from '@material-ui/core';
 import { Container } from 'react-dom';
-import Promos1 from '../Assets/Promos1.png';
-import promo2 from '../Assets/promo2.png';
-import promo3 from '../Assets/promo3.png';
-import promo4 from '../Assets/promo4.png';
-import promo5 from '../Assets/promo5.png';
+import Promos1 from '../../Assets/Promos1.png';
+import promo2 from '../../Assets/promo2.png';
+import promo3 from '../../Assets/promo3.png';
+import promo4 from '../../Assets/promo4.png';
+import promo5 from '../../Assets/promo5.png';
 
 {/* Text Mobile Stepper (Home Page) */}
 const tutorialSteps = [
@@ -101,7 +101,7 @@ export default function TextMobileStepper() {
       <Paper square elevation={0} className={classes.header} >
         <Grid container spacing={1} >
           <Grid item xs={12} sm={12} md={12}>
-            <Typography>{tutorialSteps[activeStep].label}</Typography>
+            <Typography style={{ fontFamily: 'Montserrat', fontSize: '17px' }}>{tutorialSteps[activeStep].label}</Typography>
           </Grid>
         </Grid>
       </Paper>
@@ -111,10 +111,10 @@ export default function TextMobileStepper() {
       >
         <Grid item xs={6} sm={6} md={6}>
           <Paper square elevation={0} className={classes.body} >
-            <Typography style={{ textAlign: 'left', marginBottom: '8px' }}>
+            <Typography style={{ fontFamily: 'SFPro', fontSize: '13px', textAlign: 'left', marginBottom: '8px' }}>
               {tutorialSteps[activeStep].text}
             </Typography>
-            <Typography style={{ textAlign: 'left' }}>
+            <Typography style={{ fontFamily: 'SFPro', fontSize: '13px', textAlign: 'left' }}>
               {tutorialSteps[activeStep].hashtag}
             </Typography>
           </Paper>

@@ -15,6 +15,16 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#e8e8e8'
     },
   },
+  para: {
+    fontFamily: 'SFPro',
+    fontWeight: 'normal',
+    fontSize: 14,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 15,
+    marginTop: 15
+  },
 }));
 
 export default function SimplePaperDisclaimer() {
@@ -24,11 +34,11 @@ export default function SimplePaperDisclaimer() {
     <div className={classes.root}>
       <Paper elevation={0}>
        
-      <Typography className={classes.pos} color="textSecondary">
+      <Typography className={classes.pos} style={{color:"#212121"}}>
           Disclaimer
         </Typography>
      
-        <Typography variant="body2" component="p">
+        <Typography className={classes.para}>
           Insurance is a contract of utmost good faith and the Life to be Insured/Proposer (If different from Life to be Insured) is required to disclose all material facts to the insurer. All answers to the questions stipulated in this Proposal form are the basic of and are an inseparable part of the policy of insurance. In case of doubt as to whether a fact is material or not, the fact should be disclosed. Please answer all questions. This product brochure is indicative of the terms, conditions, warranties and exceptions contained in the insurance policy bond
         </Typography>
         </Paper>

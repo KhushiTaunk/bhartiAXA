@@ -6,15 +6,16 @@ import SimpleCard4Reasons from '../Components/eFutureInvestPage/SimpleCard(4Reas
 import SimpleCardPlanDetails from '../Components/eFutureInvestPage/simplecard(PlanDetails)';
 import TabsWrappedLabel from '../Components/eFutureInvestPage/tab';
 import ContainedButtonsDowloadBrochure from '../Components/home page/ContainedButtonDownloadBrochure';
-
+import { Grid } from '@material-ui/core';
 
 export default function Efutureinvest() {
   return (
     <React.Fragment>
-        <Container fixed>
 
+          <Container fixed>
            {/* Folder-Activebreadcrumb */}
           <ActiveLastBreadcrumb/>
+          </Container>
 
             {/* Folder-Simplecard(BhartiAxaStart) */}
            <SimpleCardStartBhartiAXA/>
@@ -25,15 +26,15 @@ export default function Efutureinvest() {
              {/* Folder-simplecard(PlanDetails) */}
             <SimpleCardPlanDetails/>
 
+            <Container fixed>
              {/* Folder-tab */}
             <TabsWrappedLabel/>
+            </Container>
 
              {/* Folder-ContainedButtonDownloadBrochure */}           
             <ContainedButtonsDowloadBrochure/>
 
 
-            
-        </Container>
     </React.Fragment>
   );
 }

@@ -19,12 +19,12 @@ export default function ContainedButtonsDowloadBrochure() {
   return (
     <div className={classes.root}>
      <Grid container spacing={6}>
-      <Grid item xs={5} md={6}>
+      <Grid item xs={6} md={6}>
       <Button variant="contained"  style={{ backgroundColor: '#00529C', color: "#FFFFFF" }}>
         Download brochure
       </Button>
       </Grid>
-      <Grid item xs={6} md={6}>
+      <Grid item xs={6} md={3}>
       <Button variant="contained"  style={{ backgroundColor: '#00529C', color: "#FFFFFF" }}>
         Policy Bond
       </Button>

@@ -13,7 +13,8 @@ import FiberManualRecordSharpIcon from '@material-ui/icons/FiberManualRecordShar
 {/* For adding the details about the various plans */}
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 325,
+    background: 'linear-gradient(to bottom, #eff7ff, #ffffff)',
   },
   bullet: {
     display: 'inline-block',
@@ -21,10 +22,32 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
+    fontFamily: 'Montserrat',
+    fontWeight: '500',
+    fontSize: 27,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 20,
+    marginTop: 20
+  },
+  para: {
+    fontFamily: 'SFPro',
+    fontWeight: 'normal',
     fontSize: 14,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 15,
+    marginTop: 15
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 8,
+    fontFamily: 'SFPro',
+    fontSize: 16,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -40,80 +63,77 @@ export default function SimpleCardPlanDetails() {
       <Grid item xs={12} md={12}>
       </Grid>
       <Grid item xs={12} md={12}>
-        <Typography variant="h8" component="h2" align="left" style={{color:"#212121"}}>
+        <Typography className={classes.title} style={{color:"#212121"}}>
           Plan Details
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography className={classes.pos} color="textSecondary" align="left" style={{color:"#00529b"}}>
-        How it works?
+        <b>How it works?</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} color="textSecondary" align="left">
-        Let’s take a look at this case study
+        <Typography className={classes.pos} align="left" >
+        <b>Let’s take a look at this case study</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
+        <Typography className={classes.para}>
         35-year-old Aditya purchases our Bharti AXA eFuture Invest and would like to invest in the Grow Money Plus Fund. He chooses a 10-year policy term for a Sum Assured of ₹ 5,00,000. He pays an annual premium of ₹ 50,000 for 5 years.
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        {'\u2022'} He starts paying ₹ 50,000* annually
+        <Typography className={classes.para}>
+        {'\u2022'} He starts paying <b>₹ 50,000* annually</b>
         </Typography>
         </Grid>
         <Grid item xs={6} md={6}>
-        <Typography variant="body2" component="p" align="left">
-        1ST POLICY YEAR
+        <Typography className={classes.para}>
+        <b>1ST POLICY YEAR</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        {'\u2022'}  He finishes paying annual premiums
+        <Typography className={classes.para}>
+        {'\u2022'}  He <b>finishes</b> paying <b> annual premiums</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        5TH POLICY YEAR
+        <Typography className={classes.para}>
+        <b>5TH POLICY YEAR</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        {'\u2022'} At an assumed 4% rate of return, he receives ₹ 2,59,676 (Fund Value) on maturity
+        <Typography className={classes.para}>
+        {'\u2022'} At an assumed 4% rate of return, he receives <b>₹ 2,59,676 (Fund Value) on maturity</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        At an assumed 8% rate of return, he receives ₹ 3,58,776 (Fund Value) on maturity
+        <Typography className={classes.para}>
+        At an assumed 8% rate of return, he receives <b>₹ 3,58,776 (Fund Value) on maturity</b>
         </Typography>
         </Grid>
-        <Typography variant="body2" component="p" align="left">
-        10TH POLICY YEAR
+        <Typography className={classes.para}>
+        <b>10TH POLICY YEAR</b>
         </Typography>
-
-        <Grid container spacing={4}>
-        <Grid item xs={1}>
-        </Grid>
-        <Grid item xs={12} md={12}>
-        <Typography variant="body2" component="p" align="left">
-        Disclaimer: # 4% and 8% rates are used only for illustration purposes and are not guaranteed. The values represented with 4% & 8% are not the upper or lower limits of what one can expect from this policy, as it is dependent on number of factors including investment performance 
-        </Typography>
-        </Grid>
-        </Grid>
 
         <Grid container spacing={2}>
+        <Grid item xs={12} md={12}>
+        <Typography className={classes.para}>
+        <b>Disclaimer:</b> # 4% and 8% rates are used only for illustration purposes and are not guaranteed. The values represented with 4% & 8% are not the upper or lower limits of what one can expect from this policy, as it is dependent on number of factors including investment performance 
+        </Typography>
+        </Grid>
+        </Grid>
+
         <Grid item xs={1}>
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography className={classes.pos}  style={{color:"#00529b"}} align="left">
-        Sad Demise
+        <b>Sad Demise</b>
         </Typography>
         </Grid>
-        </Grid>
-        <Typography variant="body2" component="p" align="left">
-        In case of death, his family will receive higher of Sum Assured or Fund Value
+
+        <Typography className={classes.para}>
+        <b>In case of death, his family will receive higher of Sum Assured or Fund Value</b>
         </Typography>
 
       </CardContent>

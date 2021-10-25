@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
+  acc: {
+    backgroundColor: '#DCE7F1',
+  },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,

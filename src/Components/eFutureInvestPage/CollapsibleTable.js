@@ -15,14 +15,16 @@ const columns = [
  
   {
     id: 'population',
-    label: 'Parameter',
+    label: <b>Parameter</b> ,
     minWidth: 170,
     align: 'left',
     format: (value) => value.toLocaleString('en-US'),
+    fontFamily: 'Montserrat',
   },
   {
     id: 'size',
-    label: 'Eligibility',
+    label: <b>Eligibility</b>,
+    fontFamily: 'Montserrat',
     minWidth: 170,
     align: 'left',
     format: (value) => value.toLocaleString('en-US'),
@@ -58,7 +60,7 @@ const useStyles = makeStyles({
 export default function StickyHeadTable() {
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(8);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -105,7 +107,7 @@ export default function StickyHeadTable() {
         </Table>
       </TableContainer>
       <TablePagination
-        rowsPerPageOptions={[10, 25, 100]}
+        rowsPerPageOptions={[5, 10, 50]}
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}

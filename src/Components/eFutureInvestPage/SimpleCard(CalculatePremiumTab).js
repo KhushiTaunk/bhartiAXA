@@ -12,6 +12,7 @@ import {Link, Router} from "react-router-dom";
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    background: 'linear-gradient(to bottom, #eff7ff, #ffffff)',
   },
   bullet: {
     display: 'inline-block',

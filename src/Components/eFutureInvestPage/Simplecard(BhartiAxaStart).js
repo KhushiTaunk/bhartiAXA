@@ -14,6 +14,7 @@ import { Container } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    background: 'linear-gradient(to bottom, #eff7ff, #ffffff)',
   },
   bullet: {
     display: 'inline-block',
@@ -21,10 +22,33 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
+    fontFamily: 'Montserrat',
+    fontWeight: '500',
+    fontSize: 27,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 20,
+    marginTop: 20
+  },
+
+  para: {
+    fontFamily: 'SFPro',
+    fontWeight: 'normal',
     fontSize: 14,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginBottom: 8,
+    marginTop: 8
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 8,
+    fontFamily: 'SFPro',
+    fontSize: 16,
+    textAlign: 'left',
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -41,26 +65,26 @@ export default function SimpleCardStartBhartiAXA() {
       <Grid container spacing={12}>
 
         <Grid item xs={12} md={12}>
-        <Typography variant="h8" component="h2" align="left" style={{color:"#212121"}}>
-          Bharti AXA Life eFuture Invest
+        <Typography className={classes.title} style={{color:"#212121"}}>
+         Bharti AXA Life eFuture Invest
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography className={classes.pos} align="left" style={{color:"#00529b"}}>
-        (UIN:130L063V02)
+        <b>(UIN:130L063V02)</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
         <Typography className={classes.pos} align="left" style={{color:"#00529b"}}>
-        (ADVT NO:II-Dec-2019-2017)
+        <b>(ADVT NO:II-Dec-2019-2017)</b>
         </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-        <Typography className={classes.pos} align="left">
+        <Typography className={classes.para}>
         In this policy, the investment risk in investment portfolio is borne by the policyholder.
         </Typography>
         </Grid>
-        <Typography variant="body2" component="p" align="left">
+        <Typography className={classes.para}>
         A unit-linked, online investment plan that offers you both good returns and an added life cover. To get the most of this income tax-saving investment, all you must do is choose between a single premium or a premium payment term of 5 years while you reap the benefits for 10.
         </Typography>
         <Grid item xs={12} md={12}>

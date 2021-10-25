@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
+    background: 'linear-gradient(to bottom, #eff7ff, #ffffff)',
   },
 }));
 
@@ -64,18 +65,15 @@ export default function TabsWrappedLabel() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example" color="primary">
+      <AppBar position="static" color="white">
+        <Tabs value={value} onChange={handleChange} label="wrapped label tabs example" style={{color:"#00529a"}}>
           <Tab
             value="one"
-            indicatorColor="secondary"
-            textColor="primary"
-            label="Who Can Buy?"
-            wrapped
+            label=<b>Who Can Buy?</b>
             {...a11yProps('one')}
           />
-          <Tab value="two" label="View Details" {...a11yProps('two')} />
-          <Tab value="three" label="Calculate Premium" {...a11yProps('three')} />
+          <Tab value="two" label=<b>View Details</b> {...a11yProps('two')} />
+          <Tab value="three" label=<b>Calculate Premium</b> {...a11yProps('three')} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index="one">

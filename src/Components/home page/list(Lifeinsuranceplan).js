@@ -11,6 +11,8 @@ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import { Button } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +29,9 @@ export default function AlignItemsList() {
   const classes = useStyles();
 
   return (
+
     <List className={classes.root}>
+     <Grid item xs={12} md={4}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <VerifiedUserIcon style={{color:"#00529b"}}/>
@@ -50,7 +54,9 @@ export default function AlignItemsList() {
           }
         />
       </ListItem>
+      </Grid>
       <Divider variant="inset" component="li" />
+      <Grid item xs={12} md={4}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
         <TrackChangesIcon  style={{color:"#00529b"}}/>
@@ -71,6 +77,7 @@ export default function AlignItemsList() {
           }
         />
       </ListItem>
+      </Grid>
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>

@@ -107,7 +107,7 @@ export default function TextMobileStepper1() {
       <Paper square elevation={0} className={classes.header}>
         <Grid container spacing={1} >
           <Grid item xs={12} sm={12} md={12}>
-            <Typography style={{fontSize: '17px' }}>{tutorialSteps[activeStep].label}</Typography>
+            <Typography style={{ fontFamily: 'Montserrat', fontSize: '17px' }}>{tutorialSteps[activeStep].label}</Typography>
           </Grid>
         </Grid>
       </Paper>
@@ -125,7 +125,7 @@ export default function TextMobileStepper1() {
       <Paper square elevation={0} className={classes.body}>
         <Grid container spacing={1} >
           <Grid item xs={12} sm={12} md={12}>
-            <Typography style={{fontSize: '13px', textAlign: 'left', marginBottom: '8px' }}>
+            <Typography style={{ fontFamily: 'SFPro', fontSize: '13px', textAlign: 'left', marginBottom: '8px' }}>
               {tutorialSteps[activeStep].Quote}
             </Typography>
           </Grid>
@@ -133,12 +133,12 @@ export default function TextMobileStepper1() {
             <Divider />
           </Grid>
           <Grid item xs={12} sm={12} md={12}>
-            <Typography style={{fontSize: '12px', fontWeight: 'bold', textAlign: 'left' }}>
+            <Typography style={{ fontFamily: 'SFPro', fontSize: '12px', fontWeight: 'bold', textAlign: 'left' }}>
               {tutorialSteps[activeStep].Name}
             </Typography>
           </Grid>
           <Grid item xs={12} sm={12} md={12}>
-            <Typography style={{fontSize: '12px', textAlign: 'left' }}>
+            <Typography style={{ fontFamily: 'SFPro', fontSize: '12px', textAlign: 'left' }}>
               {tutorialSteps[activeStep].LocationandTime}
             </Typography>
           </Grid>

@@ -7,13 +7,13 @@ import SimplePaperDisclaimer from '../Components/calculatePremiumPage/Disclaimer
 export default function CalculatePremiumPage() {
   return (
     <React.Fragment>
-
+       <Grid container spacing={3}>
         <Container fixed>
           {/* Folder-SimpleCard(cpPage) */}   
           <SimpleCardcpPage/>
           <SimplePaperDisclaimer/>
         </Container>
-
+        </Grid>
     </React.Fragment>
   );
 }

@@ -15,6 +15,13 @@ const GreenCheckbox = withStyles({
     color: green[400],
     '&$checked': {
       color: green[600],
+      fontFamily: 'SFPro',
+      fontWeight: 'normal',
+      fontSize: 12,
+      marginLeft: '10px',
+      marginRight: '10px',
+      marginBottom: 15,
+      marginTop: 15
     },
   },
   checked: {},
